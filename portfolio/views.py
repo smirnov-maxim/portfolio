@@ -1,3 +1,7 @@
 from django.shortcuts import render
+from django.http import HttpResponse, request
 
-# Create your views here.
+
+def main_page(request):
+    return render(request, 'portfolio/main_page.html')
+
